@@ -22,11 +22,11 @@ Route::get('/test',function(){
     return "Hello World"; 
 });
 
-/* Route::get('/home',function(){
+Route::get('/home',function(){
     return Inertia::render('Home/manage-home'); 
-}); */
+}); 
 
 
 Route::get('/about',function(){
-    return "About Component"; 
+    return Inertia::render('About/manage-about'); 
 });

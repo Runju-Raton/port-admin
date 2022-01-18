@@ -7,8 +7,10 @@
             <Sidebar></Sidebar>
             <!-- main content -->
             <div id="layoutSidenav_content">
-                <div id="app">
-                    <router-view></router-view>
+                <div id="app" class="p-5">
+                    <slot>
+                        <!-- DYNAMIC -->
+                    </slot>
                 </div>
                 <!-- footer -->
                 <Footer></Footer>
@@ -29,3 +31,12 @@ export default {
 
 }
 </script>
+
+<style>
+      .card{
+        box-shadow: 10px 15px 5px gray;
+    }
+    .card-head h2{
+        background-image: linear-gradient(#0B5ED7, #000);
+    }
+</style>
